@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+      <title>Codeclass</title>
    </head>
    <body>
       <style>
@@ -49,14 +50,74 @@
          background-color: #9b42f5;
          color: white;
          }
+         .main {
+         padding: 10px;
+         height: 100%;
+         background-color: white;
+         margin-left: 70px;
+         margin-right: 70px;
+         }
+         .secondary {
+         padding: 10px;
+         height: 100%;
+         background-color: grey;
+         margin-left: 50px;
+         margin-right: 50px;
+         }
+         .h1{
+         text-align: center;
+         color: #9b42f5;
+         }
+         .center{
+         display: block;
+         margin: 0 auto;  
+         }
+         .round{
+         text-decoration: none;
+         color: black;
+         border-radius: 10px;
+         background: #3c3f45;
+         padding-top: 2px;
+         padding-bottom: 30px;
+         padding-right: 10px;
+         padding-left: 10px;
+         width: 60px;
+         height: 25px;
+         display: block;
+         margin: 0 auto;
+         cursor: pointer;
+         }
+          .input{
+         height: 50px; 
+         width: 300px; 
+         background-color: darkslategrey;
+         border: 0;
+         }
       </style>
       <div class="topnav">
          <a href="index.html">Home</a>
          <a href="2.html">The Basics</a>
          <a href="3.html">The Setup</a>
-         <a href="4.html">Styling</a>
-         <a class="active" href="5.html">Functionality</a>
+         <a href="4.html">Elements</a>
          <a href="6.html">Next Steps</a>
+         <a style="float: right" class="pointer active" href="5.html">Sign up for the Newsletter!</a>
       </div>
+         <br><br>
+      <div class="main">
+         <h1 class="h1">Newsletter</h1> 
+         <hr>
+      </div>
+      <div class="secondary">
+         <h3 style="text-align: center;">Sign up to Recieve Updates</h3>
+         <p style="text-align: center;">Subscribe to our newsletter to stay up-to-date with your Codeclass</p>
+         <input style="font-size: 25px"; type="email" name="email" Value="someone@example.com" class="center input" id="newsletter">
+         <a class="round" style="text-align: center;" onclick="Storage()"><p>Submit</p></a>
+      </div>
+      <script>
+        function Storage(){
+         var b = document.getElementById("newsletter").value;
+         window.localStorage.setItem('email', b);       
+         }
+      </script>
    </body>
 </html>
