@@ -2,6 +2,7 @@
 <html>
    <head>
       <title>Codeclass</title>
+	  <link rel="shortcut icon" type="image/png" href="Graphics/favicon.png"/>
    </head>
    <body>
       <style>
@@ -22,7 +23,7 @@
          font-size: 17px;
          }
          html{
-         height: 600%;
+         height: 360%;
          width: 100%;
          }
          body {
@@ -83,6 +84,40 @@
          .h1{
          text-align: center;
          color: #9b42f5;
+         }
+         .leftButton{
+         position:absolute;
+         right:85%;
+         bottom:-250%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;  
+         }
+         .rightButton{
+         position:absolute;
+         right:10%;
+         bottom:-250%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+		 .link{
+         text-decoration: none;
+         color: black;
          }
       </style>
       <div class="topnav">
@@ -195,10 +230,16 @@
             <li>4</li>
          </ol>
          <h1>Hello World!</h1>
-         <img src="Graphics/smiley.png" height=150px width=150px>
+         <img src="Graphics/smiley.png" height="150px" width="150px" alt="Smiley">
       </div>
       <div class="secondary">
          <p>Now if you're ready you can go to the next page!</p>
       </div>
+	  <div class="leftButton">
+	  	 <a class="link" href="3.html">Last Page</a> 
+	  </div>
+	  <div class="rightButton">
+	  	 <a class="link" href="6.html">Next Page</a>
+	  </div>
    </body>
 </html>

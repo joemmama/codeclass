@@ -2,6 +2,7 @@
 <html>
    <head>
       <title>Codeclass</title>
+	  <link rel="shortcut icon" type="image/png" href="Graphics/favicon.png"/>
    </head>
    <body>
       <style> 
@@ -21,8 +22,8 @@
          text-decoration: none;
          font-size: 17px;
          }
-         html {
-         height: 400%;
+         html{
+         height: 110%;
          width: 100%;
          }
          body {
@@ -76,6 +77,40 @@
          height: 150px;
          width: 150px;  
          }
+         .leftButton{
+         position:absolute;
+         right:85%;
+         bottom:-20%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;  
+         }
+         .rightButton{
+         position:absolute;
+         right:10%;
+         bottom:-5%;
+         background-color: #9b42f5;
+         border: none;
+         color: white;
+         padding: 15px 32px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+		 .link{
+         text-decoration: none;
+         color: black;
+         }
       </style>
       <div class="topnav">
          <a class="active" href="index.html">Home</a>
@@ -94,7 +129,8 @@
             is the coding language for all of the internet. It has existed since the 80's and is still a part of every website today.
             With the help of this page, you will learn how to make your first website.
          </p>
-         <img src="Graphics/html.png" class="center" height=150px width=150px>
+		  </p>
+         <img src="Graphics/html.png" class="center" height="150px" width="150px" alt="HTML image">  
       </div>
       <div class="secondary">
          <p>With the knowledge gained from this page you will be able to make your own websites about anything that you want. There is not limit to what you can do with html so make whatever you want. 
@@ -112,5 +148,6 @@
       <div class="secondary">
          <p>On the next page you will learn the basics of hmtl! So when you're ready click the next button!</p>
       </div>
+	<a class="rightButton link" href="2.html">Next Page</a>
    </body>
 </html>
